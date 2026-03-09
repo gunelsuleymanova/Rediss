@@ -1,10 +1,14 @@
-package com.example.Redis.resdis.dto;
+package com.example.Redis.resdis.dto.request;
 
-import java.time.LocalDate;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class BlogRequestDto {
-    private String name;
+    private String owner;
     private String title;
     private String description;
-    private LocalDate releaseDate;
 }
