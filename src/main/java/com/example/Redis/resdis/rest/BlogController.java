@@ -37,7 +37,7 @@ public class BlogController {
     @PutMapping("/put/{id}/{data}")
     public String update(@PathVariable Long id,@PathVariable String data){
         blogService.update(id,data);
-        return "deyisiklik icra olsundu";
+        return "deyisiklik icra olundu";
     }
 
 
